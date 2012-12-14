@@ -1,0 +1,28 @@
+	<div class="classification_content">
+		小说类型 > ><%=@bookstype%>
+		<br>
+		<div class="classification_content_above">
+			<div class="classification_content_above_temple">
+				<div class="classification_content_above_temple_pic">
+
+				</div>
+				<div class="classification_content_above_temple_text">
+
+				</div>
+			</div>
+			<div class="classification_content_above_temple">
+				<div class="classification_content_above_temple_pic">
+
+				</div>
+				<div class="classification_content_above_temple_text">
+					<% @books.each do |book|%>
+						<%=link_to book.bookname ,book%><br>
+					<% end %>
+				</div>
+			</div>
+		</div>
+
+		<div class="classification_content_list">
+			<%= params.inspect%>
+		</div>
+	</div>

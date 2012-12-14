@@ -1,0 +1,7 @@
+<div class="new_ranking">
+	新书推荐<br>
+	<% @books.each do |book|%>
+		【<%=link_to book.tpye, bookstype_book_path(book)%>】
+		<%=link_to book.bookname ,book%><br>
+	<% end %>
+</div>

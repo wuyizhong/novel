@@ -1,0 +1,12 @@
+
+<div class="book_lines_content">
+<div class="book_lines_title">
+	<span class = "up_and_down">
+		
+		<%=link_to'上一章',previous_book_book_lines_path%>
+	</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<%=@booklin.capter%>&nbsp;&nbsp;&nbsp;&nbsp;<%=@booklin.captername%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class = "up_and_down"><%=link_to'下一章',next_book_book_lines_path %></span>
+</div>
+<div class="book_lines_text"><%= @booklin.text%></div>
+</div>

@@ -1,0 +1,17 @@
+ 书名： <%= @book.bookname %><br>
+ 字数： <%= @book.wordqty %><br> 
+ 作者： <%= @book.author.name %><br>
+ 描述： <%= @book.describe %><br>
+ 图片： <%=image_tag @book.picpath%><br>
+ 类别：<%= @book.tpye %><br>
+ 评价:（list）<br>
+
+  <%= form_for [@book,@book_assess] do |f| %>
+  <div class="field">
+    <%= f.label "请留言：" %><br />
+    <%= f.text_area :text ,:rows => 4,:cols =>90 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "提交" %>
+  </div>
+  <% end %>

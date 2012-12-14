@@ -1,0 +1,62 @@
+<div class="headerfivth">
+	<div class="small_message">
+		
+		<%= image_tag "message.jpg" ,{:height =>20,:height => 20}%>
+		书友&nbsp;<%=link_to "王"%>&nbsp;阅读了小说 《YYYY》
+
+	</div>
+	<div class="headerfivth_search">
+		<%= form_tag search_books_path do%>
+		关键字：<%= text_field_tag :keys,params[:keys] %>
+		<%= submit_tag "检索"%>
+		<%end %>
+	</div>
+</div>
+<div class="main_one">
+<div class="main_one_left">
+		<%= render :partial => "books/newbooks_recommend"%>
+
+
+		<%= render :partial => "books/month_pass_pk"%>
+	
+</div>
+<div class="main_one_center">
+	<div class="main_one_center_hot">
+		<div class="main_one_center_hot_book">一周热门精选</div>
+		<div class="main_one_center_hot_pic">图片</div>
+		<div class="main_one_center_hot_text">《YYY》&nbsp;&nbsp;点评评论</div>
+	</div>
+
+	<div class="main_one_center_block">
+		<div class="main_one_center_block_left">
+			<div class="main_one_center_block_left_top"></div>
+			<div class="main_one_center_block_left_left"></div>
+			<div class="main_one_center_block_left_right"></div>
+			<div class="main_one_center_block_left_bottom"></div>
+		</div>
+		<div class="main_one_center_block_left">
+			<div class="main_one_center_block_left_top"></div>
+			<div class="main_one_center_block_left_left"></div>
+			<div class="main_one_center_block_left_right"></div>
+			<div class="main_one_center_block_left_bottom"></div>
+		</div>
+	</div>
+	<div class="main_one_center_block">
+		<div class="main_one_center_block_left">
+			<div class="main_one_center_block_left_top"></div>
+			<div class="main_one_center_block_left_left"></div>
+			<div class="main_one_center_block_left_right"></div>
+			<div class="main_one_center_block_left_bottom"></div>
+		</div>
+		<div class="main_one_center_block_left">
+			<div class="main_one_center_block_left_top"></div>
+			<div class="main_one_center_block_left_left"></div>
+			<div class="main_one_center_block_left_right"></div>
+			<div class="main_one_center_block_left_bottom"></div>
+		</div>
+	</div>
+</div>
+<div class="main_one_right">
+	<%= render "books/celebrity_list"%>
+</div>
+</div>

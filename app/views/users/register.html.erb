@@ -1,0 +1,43 @@
+<div class= "register">
+<%= form_for(@user) do |f|%>
+<% if @user.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<table>
+	<tr><td>
+	<%= f.label "用户名"%></td><td>
+	<%= f.text_field :username %></td>
+</tr><tr><td>
+	<%= f.label "密码"%></td><td>
+	<%= f.password_field :password %></td>
+</tr><tr><td>
+	<%= f.label "再次输入密码"%></td><td>
+	<%= f.password_field :password_confirmation %></td>
+</tr><tr><td>
+	<%= f.label "邮箱"%></td><td>
+	<%= f.text_field :email %></td>
+</tr><tr><td>
+	以下为可填写项：<br></td>
+</tr><tr><td>
+	<%= f.label "身份证号码"%></td><td>
+	<%= f.text_field :ic_card %></td>
+</tr><tr><td>
+	<%= f.label "昵称"%></td><td>
+	<%= f.text_field :fullname %></td>
+</tr><tr><td>
+	<%= f.label "密码保护问题"%></td><td>
+	<%= f.select :password_question,select_array %></td>
+</tr><tr><td>
+	<%= f.label "请输入答案"%></td><td>
+	<%= f.text_field :password_answer %></td>
+</tr>
+	</table>
+<%=f.submit "提交",:class => "submit" %>
+<% end %>
+</div>

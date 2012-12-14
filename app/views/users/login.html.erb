@@ -1,0 +1,20 @@
+<div class="login">
+<%= form_for :user, :url =>{:action => :signin } do |f|%>
+<table>
+	<tr>
+		<td><label>用户名</label></td>
+		<td><%= f.text_field :username %></td>
+	</tr>
+	<tr>
+		<td><label>密码</label></td>
+		<td><%= f.password_field :password %></td>
+	</tr>
+	<tr>
+		<%= flash[:notice] %>
+	</tr>
+	<tr>
+		<td><%= f.submit "登录"%></td>
+	</tr>
+</table>
+<%end %>
+</div>

@@ -1,0 +1,9 @@
+<% cache('author_message') do -%>
+
+作者：<%= @author.name%><br>
+他的话语：<%= @author.hissays%><br>
+他的作品：<% @books.each do |book|%>
+			<%=link_to book.bookname ,book%>&nbsp;&nbsp;&nbsp;&nbsp;  
+	<% end %>
+
+	<%end%> 

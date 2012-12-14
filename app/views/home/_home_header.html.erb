@@ -1,0 +1,36 @@
+<div class="top">
+	<% if current_user %>
+	<%= link_to current_user.username%>，你好
+	<% end %>
+	欢迎访问note小说网， 请&nbsp;
+	<%=link_to '登录' ,login_users_path%>&nbsp;或&nbsp;
+	<%= link_to '注册',register_users_path%>
+	<%= link_to '退出',signout_users_path%>
+</div>
+<div class="headerpic">
+	<%= image_tag "headerpic.jpg" ,{:width => 960, :height => 50}%>
+</div>
+<div class="headersecond">
+	<div class="leftpic">
+		<%=image_tag "logo.jpg",{:width => 300,:height => 80}%>
+		<%=image_tag "advertisement.jpg",{:width => 390,:height => 80}%>
+	</div>
+</div>
+<div class="headerthird">
+	<ul>
+		<li><%=link_to '首页' ,books_path%> · </li>
+		<li><a href="#">精品</a> |</li>
+		<li><a href="#">玄幻</a> · </li>
+		<li><a href="#">奇幻</a> |</li>
+		<li><a href="#">都市</a> · </li>
+		<li><a href="#">青春</a> |</li>
+		<li><%=link_to '历史' ,:controller => 'books',:action =>'bookstypehead',:nam => "历史军事"%> · </li>
+		<li><%=link_to '军事' ,:controller => 'books',:action =>'bookstypehead',:nam => "历史军事"%> |</li>
+		<li><%=link_to '游戏' ,:controller => 'books',:action =>'bookstypehead', :nam => "游戏竞技"%> · </li>
+		<li><%=link_to '竞技' ,:controller => 'books',:action =>'bookstypehead', :nam => "游戏竞技"%> |</li>
+		<li><a href="#">科幻</a> · </li>
+		<li><a href="#">灵异</a> |</li>
+		<li><%=link_to '武侠' ,:controller => 'books',:action =>'bookstypehead', :nam => "武侠仙侠"%> · </li>
+		<li><%=link_to '仙侠' ,:controller => 'books',:action =>'bookstypehead', :nam => "武侠仙侠"%></li>
+	</ul>
+</div>

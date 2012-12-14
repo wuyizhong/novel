@@ -1,0 +1,176 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+
+
+
+// 左边部分
+.main_one_left{
+	width: 200px;
+	height: 800px;
+	
+	float: left;
+}
+
+.click_ranking{
+	width: 200px;
+	height: 380px;
+	background-color: #dddddd;
+	float: left;
+}
+
+.new_ranking{
+	width: 200px;
+	margin-top: 5px;
+	height: 400px;
+	background-color: #cccccc;
+	float: left;
+}
+
+// 中间部分
+.main_one_center{
+	margin-left: 5px;
+	width: 560px;
+	height: 785px;
+	background-color: #cccccc;
+	float: left;
+}
+
+.main_one_center_hot{
+	width: 560px;
+	height: 220px;
+	background-color: #333333;
+	float: left;
+	
+}
+.main_one_center_hot_book{
+	color: red;
+	background-color: green;
+	height: 30px;
+}
+
+.main_one_center_hot_pic{
+	height: 170px;
+	width: 160px;
+	background-color: #ffffff;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.main_one_center_hot_text{
+	height: 170px;
+	width: 370px;
+	background-color: #ffffff;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.main_one_center_block{
+	width: 560px;
+	height: 260px;
+	background-color: red;
+	float: left;
+	margin-top: 5px;
+}
+
+.main_one_center_block_left{
+	width: 266px;
+	height: 240px;
+	float: left;
+	background-color: white;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+.main_one_center_block_left_top{
+	height: 32px;
+	width: 265px;
+	float: left;
+	background-color: black;
+}
+
+.main_one_center_block_left_left{
+	height: 100px;
+	width: 80px;
+	background-color: blue;
+	float: left;
+}
+.main_one_center_block_left_right{
+	height: 100px;
+	width: 180px;
+	background-color: yellow;
+	margin-left: 3px;
+	float: left;
+}
+.main_one_center_block_left_bottom{
+	height: 100px;
+	width: 260px;
+	background-color: green;
+	float:left;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+// 右边部分
+.main_one_right{
+	margin-left: 5px;
+	width: 190px;
+	float: right;
+}
+.stars{
+	width: 190px;
+	height: 380px;
+	background-color: #555555;
+
+}
+.star{
+	width: 190px;
+	height: 400px;
+	background-color: yellow;
+	margin-top: 5px;
+}
+
+
+
+//books_classification.html.erb
+.classification_content{
+	background: yellow;
+}
+
+
+//_month_pass_pk.html.erb
+.click_ranking_bookname{
+	width: 160px;
+	float: left;
+	
+}
+
+.click_ranking_counts{
+	width: 20px;
+	float: right;
+}
+
+//show.html.erb
+.detail_pic{
+	width: 180px;
+	float: left;
+}
+.detail_introduction{
+	width: 720px;
+	float: left;
+	height: 154px;
+}
+.detail_main_up{
+	padding-left: 50px;
+}
+.detail_main_down{
+	padding-left: 50px;
+}
+.detail_main_down_access{
+	
+	
+}

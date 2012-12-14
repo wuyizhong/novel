@@ -1,0 +1,14 @@
+
+
+		<div class="stars">
+		上周名人堂<br>
+		<% @authors.each do |author|%>
+			<%= link_to author.name ,author_path(author)%>
+			<br>
+		<% end %>
+	</div>
+	<div class="star">
+		<div>照片</div>
+		<div>笔名</div>
+		<div>介绍</div>
+	</div>

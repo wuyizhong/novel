@@ -1,0 +1,11 @@
+<div><%= @books.bookname%></div>
+<div>
+	<% @books.book_lines.each do |f|%>
+		<%=link_to f.capter ,book_book_line_path(@books,f)%>
+		<%=link_to f.captername ,book_book_line_path(@books,f)%>
+		<br>
+	<% end %>
+	
+</div>
+
+</div>

@@ -1,0 +1,14 @@
+
+
+			<div class="click_ranking">
+		月票PK榜<br>
+<% @book_month_counts.each do |book_count|%>
+			<div class="click_ranking_bookname">
+			【<%=link_to book_count.book.bookname ,book_count.book %>】</div>
+
+			<div class="click_ranking_counts">
+				<%= book_count.day_counts%>
+			</div>
+			<br>
+		<% end %>
+	</div>

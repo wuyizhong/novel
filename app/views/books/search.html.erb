@@ -1,0 +1,10 @@
+<%=flash[:notice]%>
+<% @books.each do |book|%>
+	<div>
+
+		
+	</div>
+	<div>
+	<%=link_to '《'+book.bookname+'》',book %>-------------------------------------<%= link_to book.author.name%>
+	</div>
+<% end %>

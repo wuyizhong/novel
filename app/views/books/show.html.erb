@@ -1,0 +1,39 @@
+ <div class="detail_main_up">
+ <div class="detail_pic">
+  <%=image_tag @book.picpath%>
+ </div>
+
+ <div class="detail_introduction">
+书名： <%= @book.bookname %><br>
+ 字数： <%= @book.wordqty %><br> 
+ 作者： <%= @book.author.name %><br>
+ 描述： <%= @book.describe %><br>
+ 类别：<%= @book.tpye %><br>
+
+  <%=link_to '开始阅读' ,book_book_lines_path(@book) %>
+</div>
+
+</div>
+
+<div class="detail_main_down">
+   <div> <span style="color:red"><%= flash[:notice]%></span></div>
+<div class="detail_main_down_access">
+  <% @book_assesses.each do |book_assess|%>
+    <%= book_assess.user.username%>
+    <%= book_assess.text%><br>
+
+  <% end %>
+</div>
+11
+  <div>
+  <%= form_for [@book,@book_assess] do |f| %>
+  <div class="field">
+    <%= f.label "评论：" %><br />
+    <%= f.text_area :text ,:rows => 4,:cols =>90 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "提交" %>
+  </div>
+  <% end %>
+  </div>
+</div>

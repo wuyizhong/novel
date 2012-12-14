@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bookname: MyString
+  wordqty: 1
+  describe: MyString
+  textpath: MyString
+  picpath: MyString
+  clickcount: 1
+
+two:
+  bookname: MyString
+  wordqty: 1
+  describe: MyString
+  textpath: MyString
+  picpath: MyString
+  clickcount: 1

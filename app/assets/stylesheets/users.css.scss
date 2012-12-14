@@ -1,0 +1,44 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.login{
+	color: red;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.register{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.submit{
+	font-size: 20px;
+}
+
+.registersuccess{
+	font-size: 35px;
+	font-weight: 20px;
+	color: red;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.registersuccessbottom{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: red;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  &:visited {
+    color: green;
+  }
+  &:hover {
+    color: yellow;
+  }
+}
